@@ -19,8 +19,16 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text("Swann"),
       ),
-      body: Center(
-        child: Text("This is dummy text"),
+      body: Column(
+        children: <Widget>[
+          Card(
+            child: Text("Chart"),
+            elevation: 10,
+          ),
+          Card(
+            child: Text("List of text"),
+          )
+        ],
       ),
     );
   }
